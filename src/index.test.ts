@@ -1,4 +1,4 @@
-import { inputTimeChange } from './';
+import inputTimeChange from './';
 
 describe('Lib inputTimeChange', () => {
   it('Shoult increase beginBase', () => {

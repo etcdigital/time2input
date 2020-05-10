@@ -26,7 +26,7 @@ const createDate = (time: string) => {
   return new Date(2020, 2, 2, parseInt(value[0], 10), parseInt(value[1], 10));
 };
 
-export const inputTimeChange = (
+const inputTimeChange = (
   beginBase: string,
   endBase: string,
   minutes: number,
@@ -49,3 +49,5 @@ export const inputTimeChange = (
   }
   return { begin: getTimeString(begin), end: getTimeString(end) };
 };
+
+export default inputTimeChange;
