@@ -1,7 +1,7 @@
 {
   "name": "time2input",
   "description": "A helper to manage 2 time inputs with increment/decrement",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "author": "Tiago Souza",
   "license": "MIT",
   "scripts": {
@@ -32,7 +32,7 @@
     "@types/jest": "^25.1.3",
     "@types/node": "^13.7.7",
     "import-sort-style-eslint": "^6.0.0",
-    "jest": "^25.1.0",
+    "jest": "^26.0.1",
     "prettier": "^2.0.5",
     "ts-jest": "^25.2.1",
     "ts-node": "^8.6.2",
