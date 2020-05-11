@@ -1,7 +1,7 @@
 {
   "name": "time2input",
   "description": "A helper to manage 2 time inputs with increment/decrement",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Tiago Souza",
   "license": "MIT",
   "scripts": {
@@ -24,9 +24,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "dependencies": {
-    "date-fns": "^2.13.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@netflix/tslint-config": "^1.0.1",
     "@types/jest": "^25.1.3",
