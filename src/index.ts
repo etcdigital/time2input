@@ -1,6 +1,10 @@
-import { addMinutes, subMinutes } from 'date-fns';
-
 const addSecondDigit = (digit: number): string => (digit < 10 ? `0${digit}` : digit.toString());
+
+const setMinutes = (date: Date, minutes) => {
+  const base = new Date(date.valueOf());
+  base.setMinutes(base.getMinutes() + minutes);
+  return base;
+};
 
 export const getTimeString = (date: Date): string => `${addSecondDigit(date.getHours())}:${addSecondDigit(date.getMinutes())}`;
 
@@ -15,9 +19,9 @@ export type ITimeChangeAction = 'up' | 'down';
  */
 const timeChange = (date: Date, method: ITimeChangeAction, minutes: number): Date => {
   if (method === 'up') {
-    return addMinutes(date, minutes);
+    return setMinutes(date, minutes);
   }
-  return subMinutes(date, minutes);
+  return setMinutes(date, -minutes);
 };
 
 /* Turn time string to date */
