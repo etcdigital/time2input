@@ -1,4 +1,4 @@
-# time2input
+# time2input - Deprecated, use [@fordate](https://github.com/etcdigital/fordate/) instead
 
 A helper to manage 2 time inputs with increment/decrement on second input when the first changes.
 
